@@ -2,6 +2,9 @@
 
 This extension converts Markdown files to pdf, html, png or jpeg files.
 
+This is a fork of [yzane/vscode-markdown-pdf](https://github.com/yzane/vscode-markdown-pdf) with the following changes:
+- If the filename ends with `.md`, the extension is removed in the title.
+
 [Japanese README](README.ja.md)
 
 ## Table of Contents
