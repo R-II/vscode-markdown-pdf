@@ -326,6 +326,11 @@ function makeHtml(data, uri) {
     // get title
     var title = path.basename(uri.fsPath);
 
+    // if title ends with .md, remove it.
+    if (title.match(/\.md$/i)) {
+      title = title.slice(0, -3);
+    }
+
     // read template
     var filename = path.join(__dirname, 'template', 'template.html');
     var template = readFile(filename);
